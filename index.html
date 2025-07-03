@@ -15,32 +15,122 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <div class="logo">
-          <a href="index.html">Ahmed</a>
+          <a href="#">Ahmed</a>
         </div>
         <nav>
           <input type="checkbox" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
+          <label for="check" class="menu-icon">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
           </label>
-          <ul>
+          <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about us">About us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="container">
-          <h1>I'm Ahmed</h1>
-          <img src="/assets/imge/WhatsApp_Image_2025-06-26_at_7_LE_upscale_balanced_x4-removebg-preview.png" />
+
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>I'm <span>Ahmed</span></h1>
+          <p>Front-End Web Developer</p>
+          <a href="/assets/CV/Cv_AhmedSamy2.pdf" class="btn" download>Download CV</a>
         </div>
-      </section>
-    </main>
+        <div class="hero-image">
+          <img src="assets/imge/WhatsApp_Image_2025-06-26_at_7_LE_upscale_balanced_x4-removebg-preview.png" alt="Ahmed Profile" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Passionate front-end developer with experience building responsive websites using HTML, CSS, JavaScript, and frameworks like React. Currently expanding expertise in Next.js for server-side
+          rendering and performance optimization, using TypeScript for safer and scalable code, and exploring full-stack development with Node.js to build modern web applications.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+
+        
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="html">HTML/CSS/Javascript</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="next">Next.js</button>
+        </div>
+
+        
+        <div class="project-grid">
+      
+          <div class="project-card html">
+            <h3>Rebel-Rover</h3>
+            <a href="https://ahmedsamyeid.github.io/Rebel-Rover/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+
+          <div class="project-card html">
+            <h3>Mashwar-Restaurant</h3>
+            <a href="https://ahmedsamyeid.github.io/Mashwar-Restaurant/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+          <div class="project-card html">
+            <h3>azkar</h3>
+            <a href="https://ahmedsamyeid.github.io/azkar/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+          <div class="project-card react">
+            <h3>Execlusive-e-Commerce</h3>
+            <a href="https://execlusive-e-commerce.vercel.app/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+
+          <div class="project-card react">
+            <h3>Farm-Website</h3>
+            <a href="https://farm-website-omega.vercel.app/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+          <div class="project-card react">
+            <h3>Diamond-Shop-Ecommerce-Store-Community</h3>
+            <a href="https://diamond-shop-ecommerce-store-community.vercel.app/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+
+          
+          <div class="project-card next">
+            <h3>car_dealer_website</h3>
+            <a href="https://car-dealer-website-zeta.vercel.app/" target="_blank" class="btn project-btn">View Project</a>
+          </div>
+      
+    </section>
+
+   
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Ahmed. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://github.com/AhmedSamyEid"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ahmed-samy-454b72365/"><i class="fab fa-linkedin"></i></a>
+          <a><i class="fa-solid fa-phone-volume">         +201068320396</i></a>
+        </div>
+      </div>
+    </footer>
     <script src="assets/script/main.js"></script>
   </body>
 </html>
